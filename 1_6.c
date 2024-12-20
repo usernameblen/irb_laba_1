@@ -14,7 +14,7 @@ int main() {
     int arr[3][3];
 
     
-    //заполним матрицу
+    //Р·Р°РїРѕР»РЅРёРј РјР°С‚СЂРёС†Сѓ
     for (int i = 0; i < 3; i++) {
         for (int g = 0; g < 3; g++) {
             printf("Enter value [%d][%d]:", i, g);
