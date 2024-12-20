@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-// функция для переворота строки
+// С„СѓРЅРєС†РёСЏ РґР»СЏ РїРµСЂРµРІРѕСЂРѕС‚Р° СЃС‚СЂРѕРєРё
 void reverse_string(char str[]) {
     int n = strlen(str);
     for (int i = 0; i < n / 2; i++) {
@@ -12,8 +12,8 @@ void reverse_string(char str[]) {
 }
 
 int main() {
-    char str[] = "Привет, мир!";
+    char str[] = "РџСЂРёРІРµС‚, РјРёСЂ!";
     reverse_string(str);
-    printf("Перевернутая строка: %s\n", str);
+    printf("РџРµСЂРµРІРµСЂРЅСѓС‚Р°СЏ СЃС‚СЂРѕРєР°: %s\n", str);
     return 0;
 }
