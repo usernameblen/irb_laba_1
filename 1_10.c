@@ -4,14 +4,14 @@
 void multiplyMatrices(int matrix1[10][10], int matrix2[10][10], 
     int result[10][10], int row1, int column1, 
     int row2, int column2) {
-    // делаем итоговую матрицу нулями
+    // РґРµР»Р°РµРј РёС‚РѕРіРѕРІСѓСЋ РјР°С‚СЂРёС†Сѓ РЅСѓР»СЏРјРё
     for (int i = 0; i < row1; i++) {
         for (int j = 0; j < column2; j++) {
             result[i][j] = 0;
         }
     }
 
-    // умножаем матрицы
+    // СѓРјРЅРѕР¶Р°РµРј РјР°С‚СЂРёС†С‹
     for (int i = 0; i < row1; i++) {
         for (int j = 0; j < column2; j++) {
             for (int k = 0; k < column1; k++) {
@@ -25,11 +25,11 @@ int main() {
     int matrix1[10][10], matrix2[10][10], result[10][10];
     int row1, column1, row2, column2;
 
-    // размеры первой матрицы
+    // СЂР°Р·РјРµСЂС‹ РїРµСЂРІРѕР№ РјР°С‚СЂРёС†С‹
     printf("Enter the number of rows and columns of the first matrix: ");
     scanf_s("%d %d", &row1, &column1);
 
-    // ввод первой матрицы
+   // РІРІРѕРґ РїРµСЂРІРѕР№ РјР°С‚СЂРёС†С‹
     printf("Enter the elements of the first matrix:\n");
     for (int i = 0; i < row1; i++) {
         for (int j = 0; j < column1; j++) {
@@ -37,17 +37,17 @@ int main() {
         }
     }
 
-    // размеры второй матрицы
+    // СЂР°Р·РјРµСЂС‹ РІС‚РѕСЂРѕР№ РјР°С‚СЂРёС†С‹
     printf("Enter the number of rows and columns of the second matrix: ");
     scanf_s("%d %d", &row2, &column2);
 
-    // проверка умножения
+    // РїСЂРѕРІРµСЂРєР° СѓРјРЅРѕР¶РµРЅРёСЏ
     if (column1 != row2) {
         printf("Error: Matrix multiplication is not possible.\n");
         return 1;
     }
 
-    // ввод второй матрицы
+    // РІРІРѕРґ РІС‚РѕСЂРѕР№ РјР°С‚СЂРёС†С‹
     printf("Enter the elements of the second matrix:\n");
     for (int i = 0; i < row2; i++) {
         for (int j = 0; j < column2; j++) {
@@ -55,10 +55,10 @@ int main() {
         }
     }
 
-    // умножение матриц
+    // СѓРјРЅРѕР¶РµРЅРёРµ РјР°С‚СЂРёС†
     multiplyMatrices(matrix1, matrix2, result, row1, column1, row2, column2);
 
-    // результат
+    // СЂРµР·СѓР»СЊС‚Р°С‚
     printf("Result of matrix multiplication:\n");
     for (int i = 0; i < row1; i++) {
         for (int j = 0; j < column2; j++) {
